@@ -1,0 +1,7 @@
+sources:
+  - name: db
+    database: DBT_1
+    schema: DBT_SCHEMA
+    tables:
+      - name: supply
+        identifier: SUPPLYCHAIN

@@ -1,0 +1,13 @@
+[2025-04-18T08:20:56.822+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: DataCamp.ingest manual__2025-04-18T08:20:53.906020+00:00 [queued]>
+[2025-04-18T08:20:56.829+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: DataCamp.ingest manual__2025-04-18T08:20:53.906020+00:00 [queued]>
+[2025-04-18T08:20:56.830+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2025-04-18T08:20:56.843+0000] {taskinstance.py:1380} INFO - Executing <Task(_PythonDecoratedOperator): ingest> on 2025-04-18 08:20:53.906020+00:00
+[2025-04-18T08:20:56.853+0000] {standard_task_runner.py:57} INFO - Started process 164 to run task
+[2025-04-18T08:20:56.859+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'DataCamp', 'ingest', 'manual__2025-04-18T08:20:53.906020+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/project_lifecycle.py', '--cfg-path', '/tmp/tmpdhxl_n5b']
+[2025-04-18T08:20:56.864+0000] {standard_task_runner.py:85} INFO - Job 4: Subtask ingest
+[2025-04-18T08:20:56.906+0000] {task_command.py:415} INFO - Running <TaskInstance: DataCamp.ingest manual__2025-04-18T08:20:53.906020+00:00 [running]> on host ed7238bb8c20
+[2025-04-18T08:20:56.984+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='DataCamp' AIRFLOW_CTX_TASK_ID='ingest' AIRFLOW_CTX_EXECUTION_DATE='2025-04-18T08:20:53.906020+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-18T08:20:53.906020+00:00'
+[2025-04-18T08:20:56.985+0000] {python.py:194} INFO - Done. Returned value was: None
+[2025-04-18T08:20:56.995+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=DataCamp, task_id=ingest, execution_date=20250418T082053, start_date=20250418T082056, end_date=20250418T082056
+[2025-04-18T08:20:57.030+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-04-18T08:20:57.047+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,6 @@
+[2025-04-14T21:14:34.987+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_id_example.task_id_example3 scheduled__2023-11-26T02:25:06+00:00 [queued]>
+[2025-04-14T21:14:35.003+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_id_example.task_id_example3 scheduled__2023-11-26T02:25:06+00:00 [queued]>
+[2025-04-14T21:14:35.004+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2025-04-14T21:14:35.014+0000] {local_task_job_runner.py:115} ERROR - Received SIGTERM. Terminating subprocesses
+[2025-04-14T21:14:35.020+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 143
+[2025-04-14T21:14:37.221+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
