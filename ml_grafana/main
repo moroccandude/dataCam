@@ -1,0 +1,9 @@
+# main.py
+from snowflake_connection import get_data_from_snowflake
+from train_model import train_model
+from push_to_influx import push_to_influx
+
+if __name__ == "__main__":
+    df = get_data_from_snowflake()
+    y_actual, y_pred = train_model(df)
+    push_to_influx(y_actual, y_pred)
